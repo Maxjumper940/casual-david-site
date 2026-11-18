@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mods · Casual_DAViD</title>
+  <meta name="description" content="Minecraft quality-of-life mods by Casual_DAViD.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="overlay" onclick="toggleMenu()"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">Casual_DAViD</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="mods.html" aria-current="page">Mods</a>
+      <a href="plugins.html">Plugins</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-btn" type="button" onclick="cycleTheme()" aria-label="Toggle color theme"></button>
+      <button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open menu">Menu</button>
+    </div>
+  </header>
+  <nav id="mobile-menu" aria-label="Mobile">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="mods.html" onclick="toggleMenu()">Mods</a>
+    <a href="plugins.html" onclick="toggleMenu()">Plugins</a>
+  </nav>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Mods</p>
+      <h1>Client mods</h1>
+      <p>Quality of life mods. Entries come from <code>data/projects.json</code>.</p>
+    </section>
+    <div data-list="mods"></div>
+  </main>
+  <footer class="site-footer">Casual_DAViD · Quality of Life mods and plugins</footer>
+  <script src="theme.js"></script>
+  <script src="catalog.js"></script>
+</body>
+</html>
