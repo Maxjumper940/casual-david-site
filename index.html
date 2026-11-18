@@ -1,1 +1,48 @@
-placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casual_DAViD</title>
+  <meta name="description" content="Quality of Life mods and plugins for Minecraft, by Casual_DAViD.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="overlay" onclick="toggleMenu()"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">Casual_DAViD</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="mods.html">Mods</a>
+      <a href="plugins.html">Plugins</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-btn" type="button" onclick="cycleTheme()" aria-label="Toggle color theme"></button>
+      <button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open menu">Menu</button>
+    </div>
+  </header>
+  <nav id="mobile-menu" aria-label="Mobile">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="mods.html" onclick="toggleMenu()">Mods</a>
+    <a href="plugins.html" onclick="toggleMenu()">Plugins</a>
+  </nav>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Minecraft</p>
+      <h1>Quality of Life mods and plugins</h1>
+      <p>Small tools from Casual_DAViD. The lists below are loaded from the site backend.</p>
+    </section>
+    <section>
+      <h2>Mods</h2>
+      <div data-list="mods"></div>
+    </section>
+    <section>
+      <h2>Plugins</h2>
+      <div data-list="plugins"></div>
+    </section>
+  </main>
+  <footer class="site-footer">Casual_DAViD · Quality of Life mods and plugins</footer>
+  <script src="theme.js"></script>
+  <script src="catalog.js"></script>
+</body>
+</html>

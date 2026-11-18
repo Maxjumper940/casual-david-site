@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Casual_DAViD</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="overlay" onclick="toggleMenu()"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">Casual_DAViD</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="mods.html">Mods</a>
+      <a href="plugins.html">Plugins</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-btn" type="button" onclick="cycleTheme()" aria-label="Toggle color theme"></button>
+      <button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open menu">Menu</button>
+    </div>
+  </header>
+  <nav id="mobile-menu" aria-label="Mobile">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="mods.html" onclick="toggleMenu()">Mods</a>
+    <a href="plugins.html" onclick="toggleMenu()">Plugins</a>
+  </nav>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">404</p>
+      <h1>That page is not on this site.</h1>
+      <p>The home page, mods, and plugins are the pages that exist.</p>
+    </section>
+  </main>
+  <footer class="site-footer">Casual_DAViD · Quality of Life mods and plugins</footer>
+  <script src="theme.js"></script>
+</body>
+</html>

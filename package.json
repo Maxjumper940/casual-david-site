@@ -1,0 +1,11 @@
+{
+  "name": "casual-david-site",
+  "private": true,
+  "description": "Casual_DAViD personal site for Minecraft quality-of-life mods and plugins",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

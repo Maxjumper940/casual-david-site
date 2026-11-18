@@ -1,0 +1,23 @@
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/api/projects"
+  to = "/data/projects.json"
+  status = 200
+
+[[redirects]]
+  from = "/api/health"
+  to = "/data/health.json"
+  status = 200
+
+[[redirects]]
+  from = "/mods"
+  to = "/mods.html"
+  status = 200
+
+[[redirects]]
+  from = "/plugins"
+  to = "/plugins.html"
+  status = 200

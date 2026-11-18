@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/projects", "destination": "/data/projects.json" },
+    { "source": "/api/health", "destination": "/data/health.json" }
+  ]
+}
